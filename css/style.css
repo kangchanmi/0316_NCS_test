@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+/*Reset 시작*/
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+}
+a                 {text-decoration: none;}
+a:link           {color: #333;}
+a:visited       {color: #333;}
+a:active        {color: #333;}
+a:hover        {color: #333;}
+ul                {list-style: none;}
+img             {vertical-align: middle;}
+/*Reset 끝*/
+
+/* 가이드 라인 */
+/*div#wrap                 {border: 1px solid #000;}*/
+/*header#header         {border: 1px solid #000;}*/
+/*main#main              {border: 1px solid #000;}*/
+/*aside#aside              {border: 1px solid #000;}*/
+/*footer#footer            {border: 1px solid #000;}*/
+
+
+
+/* 가이드 라인 */
+
+
+/*div#wrap 시작*/
+div#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+/*header#header 시작*/
+header#header {
+    height: 100px;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: space-between;
+}
+#header #headerLogo a {
+    line-height: 100px;
+}
+
+    /*nav#gnb 시작*/
+nav#gnb {
+    padding-top: 67px;
+}
+nav#gnb ul#mainMenu>li {
+    text-align: center;
+    border: 1px solid #333;
+    float: left;
+}
+nav#gnb ul#mainMenu>li:not(:nth-child(4)) {
+    border-right: none;
+}
+nav#gnb ul#mainMenu>li>a {
+    width: 120px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+nav#gnb ul#mainMenu>li>a:hover {
+    background-color: #d2daff;
+}
+#gnb a {
+    width: 120px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+#gnb ul.subMenu {
+    width: 118px;
+    height: 95px;
+    background-color: #d2daff;
+    position: absolute;
+    z-index: 2;
+
+    display: none;
+}
+#gnb ul.subMenu a {
+    background-color: #d2daff;
+}
+#gnb ul.subMenu a:hover {
+    background-color: #d2daff;
+    opacity: 0.7;
+}
+    /* div#bgArea 시작 */
+div#bgArea {
+    position: relative;
+    z-index: 1;
+}
+div#bgArea div#subMenuBG {
+    width: 100%;
+    height: 95px;
+    background-color: #d2daff;
+    display: inline-block;
+    display: none;
+    position: absolute;
+}
+    /* div#bgArea 시작 */
+
+    /*nav#gnb 끝*/
+/*header#header 끝*/
+
+
+/*main#main 시작*/
+main#main {
+    height: 300px;
+    overflow: -ms-hidden;
+    overflow: -webkit-hidden;
+    overflow: -moz-hidden;
+    overflow: hidden;
+}
+#main slideArea {
+    width: 1200px;
+}
+#main #slideArea #shuttleFrame {
+    width: 3650px;
+}
+#main #slideArea #shuttleFrame a {
+    float: left;
+
+    position: relative;
+}
+#main #slideArea #shuttleFrame span {
+    width: 300px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 8px;
+
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+}
+/*main#main 끝*/
+
+
+/*aside#aside 시작*/
+aside#aside {
+    height: 200px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+    /*div#bbs 시작*/
+div#bbs {
+    padding-top: 10px;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+#bbs #notice {
+    width: 400px;
+    padding: 10px;
+
+    position: relative;
+    z-index: 2;
+}
+#bbs button {
+    padding: 5px 8px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    border-bottom: none;
+
+    position: relative;
+    top: 1px;
+}
+    /*div#notice 시작*/
+
+#bbs #notice ul {
+    border: 1px solid #bbb;
+    padding: 5px;
+}
+#bbs #notice a {
+    padding: 5px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: space-between;
+}
+    /*div#notice 끝*/
+
+    /*div#gallery 시작*/
+div#gallery {
+    width: 400px;
+    margin-left: 40px;
+}
+#galleryImg {
+    border: 1px solid #bbb;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+}
+div#gallery a {
+    margin: 7px;
+    display: inline-block;
+}
+div#gallery a:hover {
+    opacity: 0.55;
+}
+    /*div#gallery 시작*/
+
+    /*div#bbs 끝*/
+
+    /* 바로가기 시작 */
+div#shortCut {
+    width: 300px;
+    margin-left: 80px;
+/*    border: 1px solid #000;*/
+}
+    /* 바로가기 끝 */
+
+/*aside#aside 끝*/
+
+
+/*footer#footer 시작*/
+footer#footer {
+    height: 100px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+    /*div#footerContents 시작*/
+div#footerContents {
+    text-align: center;
+}
+div#footerContents #footerMenu {
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd
+}
+div#footerContents #footerMenu a {
+    margin: 0 95px;
+    display: inline-block;
+}
+div#footerContents #footerMenu a:hover {
+    color: #8484df;
+    text-decoration: underline;
+}
+div#footerContents #copyTxt {
+    padding-top: 10px;
+    font-size: 16px;
+
+    letter-spacing: 2px;
+}
+    /*div#footerContents 끝*/
+
+div#familySite {
+    width: 250px;
+    padding: 10px;
+    padding-top: 15px;
+    margin-left: 155px;
+/*    border: 1px solid #000;*/
+}
+div#familySite p {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #454e9a;
+
+    cursor: pointer;
+}
+div#familySite a {
+    width: 190px;
+    padding: 10px 15px;
+    margin-left: 0;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+/*    border: 1px solid #000;*/
+}
+#familySite #Site {
+    display: none;
+
+    position: relative;
+}
+div#familySite #Site a:hover {
+    background-color: rgba(255, 150, 107, 0.36);
+}
+div#familySite #Site span {
+    font-size: 25px;
+    display: inline-block;
+    cursor: pointer;
+
+    position: absolute;
+    left: 190px;
+    top: -48px;
+}
+/*footer#footer 끝*/
+
+/*div#wrap 끝*/
+
+
+
+/* 레이어 팝업 */
+div#layerPopup {
+    width: 420px;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+div#layerPopup button {
+    font-size: 17px;
+    padding: 6px 10px;
+    margin-left: 330px;
+
+    border: none;
+    background-color: #ddd;
+}
+/* 레이어 팝업 */
+
+
+
+
+
